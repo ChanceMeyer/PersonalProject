@@ -1,0 +1,27 @@
+﻿<h1>Add a Post</h1>
+<div class="jumbotron" id="addpostpage">
+    <form ng-submit="controller.save()">
+        <div>
+            <label id="inputboxes" class="control-label" for="inputDefault">Title</label>
+            <input type="text" class="form-control" placeholder="Title" ng-model="controller.post.title" />
+        </div>
+        <div>
+            <label id="inputboxes" class="control-label" for="inputDefault">Location</label>
+            <input type="text" class="form-control" placeholder="Location" ng-model="controller.post.location" />
+        </div>
+        <div>
+            <label id="inputboxes" class="control-label" for="inputDefault">Price</label>
+            <input type="text" class="form-control" placeholder="Price" ng-model="controller.post.price" />
+        </div>
+        <!--<div>
+            <label>Date</label>
+            <input placeholder="Date" ng-model="controller.post.date" />
+        </div>-->
+        <div>
+            <label id="inputboxes" class="control-label" for="inputDefault">Description</label>
+            <input type="text" class="form-control" placeholder="Description" ng-model="controller.post.discription" />
+        </div>
+        <br />
+        <input type="submit" class="btn btn-primary" value="Add Post" />
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<link href="../../css/site.css" rel="stylesheet" />
+
+<div class="jumbotron">
+    <fieldset>
+        
+
+        <ul>
+            <li ng-repeat="error in controller.validationMessages">
+                {{error}}
+            </li>
+        </ul>
+
+        
+        <div id="rectangle" class="img-rounded">
+            <form ng-submit="controller.login()">
+
+                <div class="form-group">
+                    <label id="inputboxes" class="control-label" for="inputDefault">Email</label>
+                    <br />
+                    <input type="text" class="form-control" ng-model="controller.loginUser.email" />
+                </div>
+                <div class="form-group">
+                    <label id="inputboxes" class="control-label" for="inputDefault">Password</label>
+                    <br />
+                    <input class="form-control" type="password" ng-model="controller.loginUser.password" />
+                </div>
+
+
+                <input class="btn btn-danger" id="loginbtn" type="submit" value="Login" />
+
+                <a id="registerlnk" href="/register">Register</a>
+
+            </form>
+        </div>
+        
+    </fieldset>
+</div>

@@ -1,0 +1,31 @@
+﻿<h1>Profile!</h1>
+
+<!--<div><h2 ng-show="controller.isLoggedIn()">Welcome! {{controller.getUserName()}}</h2></div>-->
+<button ng-click="getUserById()">get user by id</button>
+
+<div class="col-lg-8 col-lg-2-offset" style="background-color:lightblue" ng-repeat="post in controller.posts">
+    <ul style="background-color:lightcoral;" class="list list-unstyled">
+        <li>
+            {{post.user}}
+        </li>
+        <li>
+            <h3>{{post.title}}</h3>
+        </li>
+        <li>
+            {{post.discription}}
+        </li>
+        <li>
+            {{post.location}}
+        </li>
+        <li>
+            {{post.date}}
+        </li>
+        <li>
+            ${{post.price}}
+        </li>
+        <a ng-href="/editPost/{{post.id}}" class="btn btn-warning">Edit</a>
+        <a ng-href="/deletePost/{{post.id}}" class="btn btn-danger">Delete</a>
+    </ul>
+</div>
+
+<a ng-href="/AddPost" class="btn btn-danger">Add Post</a>

@@ -1,0 +1,31 @@
+﻿<!--<link href="../../css/site.css" rel="stylesheet" />-->
+
+<div class="panel panel-primary" ng-repeat="post in controller.posts">
+    <div class="panel-heading">
+         <h1 class="panel-title">{{post.userName}}</h1>
+    </div>
+        <div class="panel-body">
+            <ul style="list-style-type: none">
+                <li>
+                    <h2>{{post.title}} </h2>
+                </li>
+                
+                <li>
+                    <b>Description:</b> <br />{{post.discription}}
+                </li>
+                <li>
+                    <b>Location:</b> <br />{{post.location}}
+                </li>
+                <li>
+                    <b>Price:</b> <br />${{post.price}}
+                </li>
+                
+            </ul>
+            <a id="editbtn" ng-href="/editPost/{{post.id}}" class="btn btn-warning">Edit</a> &nbsp;
+            <a id="deletebtn" ng-href="/deletePost/{{post.id}}" class="btn btn-danger">Delete</a>
+        </div>
+        
+    
+</div>
+
+

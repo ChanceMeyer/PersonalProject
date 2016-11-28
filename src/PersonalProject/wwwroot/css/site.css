@@ -1,0 +1,145 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: lightgray;
+}
+
+.jumbotron {
+    background-image:url("https://wallpaperscraft.com/image/dog_face_wind_glasses_96452_3840x2160.jpg");
+    background-size:cover;
+    height: 600px;
+}
+
+#rectangle {
+    width: 340px;
+    height: 250px;
+    background: white;
+    position: relative;
+    top:80px;
+    left: 100px;
+    background-color: transparent;
+    
+}
+
+#logo 
+{
+    text-align: center;
+}
+
+#editpage{
+    background-image: url("../images/DogRunning.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+#registerform {
+    position: relative;
+    top: -20px;
+    left:100px;
+}
+
+
+#emailbox{
+    position: relative;
+    top: 25px;
+    left: 30px;
+    
+}
+
+#passwordbox{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+#loginbtn{
+    position:relative;
+    top:10px;
+    left: 35px;
+}
+#editbtn{
+    position: relative;
+    left: 700px;
+    bottom: 110px;
+}
+#deletebtn {
+    position: relative;
+    left: 700px;
+    bottom: 110px;
+}
+
+#registerlnk{
+    position:relative;
+    top: 10px;
+    left: 40px;
+    color:dodgerblue;
+    font:bold;
+    font-family: Arial;
+}
+
+#editform {
+    position: relative;
+    left: 650px;
+    top: 20px;
+}
+
+#addpostpage {
+    background-image: url("http://wallpapersonthe.net/wallpapers/b/3840x2160/3840x2160-inu_sad_dog_akita_dog_animals-6279.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+#inputboxes {
+    color:#e74c3c;
+    font-size:1.5em;
+    font-weight:900;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+    
+
+}
+#myProgress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+#myBar {
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    background-color: green;
+}
+
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption {
+    z-index: 10 !important;
+}
+
+    .carousel-caption p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        z-index: 10 !important;
+    }
+   
+}
